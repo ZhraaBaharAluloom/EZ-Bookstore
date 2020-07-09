@@ -4,7 +4,7 @@ import books from "../books";
 import { ListWrapper } from "../styles";
 
 const BookList = () => {
-  const bookList = books.map((book) => <BookItem book={book} />);
+  const bookList = books.map((book) => <BookItem key={book.key} book={book} />);
   return <ListWrapper>{bookList}</ListWrapper>;
 };
 

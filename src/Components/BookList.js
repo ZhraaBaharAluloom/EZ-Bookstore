@@ -3,7 +3,7 @@ import BookItem from "./BookItem";
 import books from "../books";
 import { ListWrapper } from "../styles";
 
-const BookList = () => {
+const BookList = ({ book }) => {
   const bookList = books.map((book) => <BookItem key={book.key} book={book} />);
   return <ListWrapper>{bookList}</ListWrapper>;
 };

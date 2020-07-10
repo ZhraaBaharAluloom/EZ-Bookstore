@@ -1,9 +1,4 @@
-import FortyRulesofLove from "./media/FortyRulesofLove.JPG";
-import ThePresent from "./media/ThePresent.JPG";
-import Blindness from "./media/TheBlindness.JPG";
-import WhoMMyCheese from "./media/WhoMMyCheese.JPG";
-
-const books = [
+const recomandedBooks = [
   {
     key: 1,
     title: "The Present: The Secret to Enjoying Your Work & Life, Now!",
@@ -47,4 +42,4 @@ const books = [
   },
 ];
 
-export default books;
+export default recomandedBooks;

@@ -21,14 +21,11 @@ const BookDetail = ({ book }) => {
         <p> {book.genre}</p>
         <p> {book.author}</p>
         <p> {book.price} KD</p>
+        <br />
+        <br />
+        <h1>Recommended Books !</h1>
+        <RecommandedList book={book} />
       </DetailWrapper>
-      <br />
-      <br />
-      <h1>Recommended Books !</h1>
-      <RecommandedList book={book} />
-
-      {/* {book.author === books.spencerJbooks.
-      setCurrentTheme(currentTheme === "light" ? "dark" : "light"); */}
     </>
   );
 };

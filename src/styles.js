@@ -7,37 +7,16 @@ export const DetailWrapper = styled.div`
     width: 200px;
     height: 300px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 50px auto auto auto;
+    padding: 15px;
   }
   p {
     text-align: center;
     font-size: 25px;
   }
-`;
-
-export const GlobalStyle = createGlobalStyle`
-body {
-  background: linear-gradient(rgba(234, 224, 213, 0.4), rgba(94, 80, 63, 0.4));
-width:100%;
-height: 100vh;
-}`;
-
-export const HomeTitle = styled.div`
-  border: 20px solid ${(props) => props.theme.grey};
-  width: 500px;
-  height: 200px;
-  align-items: center;
-  justify-content: center;
-  margin: 250px auto;
-
   h1 {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    padding: 45px;
+    margin-top: 200px;
+    text-align: center;
   }
 `;
 
@@ -54,7 +33,6 @@ export const ItemWrapper = styled.div`
     margin-left: auto;
     margin-right: auto;
     border: 0.1px solid ${(props) => props.theme.bordersColor};
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   p {
@@ -72,11 +50,47 @@ export const ItemWrapper = styled.div`
   }
 `;
 
+export const GlobalStyle = createGlobalStyle`
+
+body {
+  background: linear-gradient(rgba(234, 224, 213, 0.4), rgba(94, 80, 63, 0.4));
+height: 100vh;
+margin: 0px;
+background-repeat: no-repeat;
+background-size: cover;
+
+
+}`;
+
 export const ListWrapper = styled.div`
   align-items: center;
   justify-content: center;
   display: flex;
-  flex-wrap: wrap;
+  margin-top: 100px;
+`;
+
+export const HomeTitle = styled.div`
+  border: 20px solid ${(props) => props.theme.grey};
+  width: 500px;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  margin: 250px auto;
+
+  h1 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 45px;
+  }
+`;
+
+export const SearchBarStyled = styled.input`
+  padding: 0.5rem;
+  margin: 4rem auto;
+  display: block;
+  width: 30%;
+  border: 1px solid ${(props) => props.theme.grey};
 `;
 
 export const NavItem = styled(NavLink)`
@@ -86,11 +100,4 @@ export const NavItem = styled(NavLink)`
   &.active {
     color: black;
   }
-`;
-
-export const SearchBarStyled = styled.input`
-  padding: 0.5rem;
-  margin: 1rem auto;
-  display: block;
-  width: 30%;
 `;

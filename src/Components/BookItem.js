@@ -8,11 +8,10 @@ const BookItem = ({ book }) => {
   return (
     <>
       <ItemWrapper>
-        <img src={book.image} alt={book.title} />
-        <p className="titleStyle">{book.title}</p>
         <Link to={`/books/${book.slug}`}>
-          <p className="detailStyle">Details .. </p>
+          <img src={book.image} alt={book.title} />
         </Link>
+        <p className="titleStyle">{book.title}</p>
       </ItemWrapper>
     </>
   );

@@ -1,12 +1,25 @@
 import React from "react";
 import RecommandedItem from "./RecommandedItem";
-import spencerJbooks from "../spencerJbooks";
+import rBooks from "../rBooks";
 import { ListWrapper } from "../styles";
 
-const RecommandedList = ({ spencerJbook }) => {
-  const recommandedList = spencerJbooks.map((spencerJbook) => (
-    <RecommandedItem key={spencerJbook.id} spencerJbook={spencerJbook} />
-  ));
+const RecommandedList = ({ book, rBook }) => {
+  const recommandedList = rBooks
+    .filter(
+      (rBook) => rBook.author === book.author && book.title !== rBook.title
+    )
+    .map((rBook) => <RecommandedItem key={rBook.id} rBook={rBook} />);
+
+  // const plantList = plants
+  // .filter((plant) => plant.name.toLowerCase().includes(query.toLowerCase()))
+  // .map((plant) => (
+  //   <PlantItem
+  //     plant={plant}
+  //     key={plant.id}
+  //     deletePlant={deletePlant}
+  //     selectPlant={selectPlant}
+  // />
+
   return <ListWrapper>{recommandedList}</ListWrapper>;
 };
 

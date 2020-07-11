@@ -9,41 +9,12 @@ export const DetailWrapper = styled.div`
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 15px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   p {
     text-align: center;
     font-size: 25px;
-  }
-`;
-
-export const ItemWrapper = styled.div`
-  border: 2px;
-  width: 300px;
-  height: 400px;
-  padding: 2px;
-  margin-top: 10px;
-  img {
-    width: 200px;
-    height: 300px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: 0.1px solid ${(props) => props.theme.bordersColor};
-  }
-
-  p {
-    text-align: center;
-    font-size: 20px;
-    padding-top: 10px;
-
-    &.titleStyle {
-      border: 1px;
-      height: 100px;
-    }
-    &.detailStyle {
-      color: ${(props) => props.theme.grey};
-    }
   }
 `;
 
@@ -53,12 +24,6 @@ body {
 width:100%;
 height: 100vh;
 }`;
-
-export const ListWrapper = styled.div`
-  align-items: center;
-  justify-content: center;
-  display: flex;
-`;
 
 export const HomeTitle = styled.div`
   border: 20px solid ${(props) => props.theme.grey};
@@ -76,11 +41,42 @@ export const HomeTitle = styled.div`
   }
 `;
 
-export const SearchBarStyled = styled.input`
-  padding: 0.5rem;
-  margin: 1rem auto;
-  display: block;
-  width: 30%;
+export const ItemWrapper = styled.div`
+  border: 2px;
+  width: 300px;
+  height: 400px;
+  padding: 2px;
+  margin-top: 10px;
+  img {
+    width: 200px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.1px solid ${(props) => props.theme.bordersColor};
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  p {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10px;
+
+    &.titleStyle {
+      border: 1px;
+      height: 100px;
+    }
+    &.detailStyle {
+      color: ${(props) => props.theme.grey};
+    }
+  }
+`;
+
+export const ListWrapper = styled.div`
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
 `;
 
 export const NavItem = styled(NavLink)`
@@ -90,4 +86,11 @@ export const NavItem = styled(NavLink)`
   &.active {
     color: black;
   }
+`;
+
+export const SearchBarStyled = styled.input`
+  padding: 0.5rem;
+  margin: 1rem auto;
+  display: block;
+  width: 30%;
 `;

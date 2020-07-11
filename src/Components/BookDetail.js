@@ -2,7 +2,7 @@ import React from "react";
 import books from "../books";
 import { Link, Redirect, useParams } from "react-router-dom";
 import RecommandedList from "./ReccomandedList";
-import spencerJbooks from "../spencerJbooks";
+import spencerJbooks from "../books";
 
 //Styles
 import { DetailWrapper } from "../styles";
@@ -24,9 +24,11 @@ const BookDetail = ({ book }) => {
       </DetailWrapper>
       <br />
       <br />
-      {/* <h1>Recommended Books !</h1>
+      <h1>Recommended Books !</h1>
+      <RecommandedList book={book} />
 
-      <RecommandedList /> */}
+      {/* {book.author === books.spencerJbooks.
+      setCurrentTheme(currentTheme === "light" ? "dark" : "light"); */}
     </>
   );
 };

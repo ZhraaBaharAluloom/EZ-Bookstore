@@ -1,14 +1,14 @@
 import React from "react";
 import { ItemWrapper } from "../styles";
 
-const RecommandedItem = ({ spencerJbook }) => {
+const RecommandedItem = ({ rBook }) => {
   return (
     <>
       <ItemWrapper>
-        <img src={spencerJbook.image} alt={spencerJbook.title} />
-        <p>{spencerJbook.title}</p>
-        <p>{spencerJbook.author}</p>
-        <p>{spencerJbook.price} KD</p>
+        <img src={rBook.image} alt={rBook.title} />
+        <p>{rBook.title}</p>
+        <p>{rBook.author}</p>
+        <p>{rBook.price} KD</p>
       </ItemWrapper>
     </>
   );

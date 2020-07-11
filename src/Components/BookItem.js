@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 //Styles
@@ -9,9 +9,9 @@ const BookItem = ({ book }) => {
     <>
       <ItemWrapper>
         <img src={book.image} alt={book.title} />
-        <p>{book.title}</p>
+        <p className="titleStyle">{book.title}</p>
         <Link to={`/books/${book.slug}`}>
-          <p>Details .. </p>
+          <p className="detailStyle">Details .. </p>
         </Link>
       </ItemWrapper>
     </>

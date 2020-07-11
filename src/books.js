@@ -1,11 +1,11 @@
 import FortyRulesofLove from "./media/FortyRulesofLove.JPG";
 import ThePresent from "./media/ThePresent.JPG";
 import Blindness from "./media/TheBlindness.JPG";
-import WhoMMyCheese from "./media/WhoMMyCheese.JPG";
+import WhoMovedMyCheese from "./media/WhoMovedMyCheese.jpg";
 
 const books = [
   {
-    key: 1,
+    id: 1,
     title: "The Present: The Secret to Enjoying Your Work & Life, Now!",
     slug: "The-Present",
     released: " September , 2003",
@@ -14,18 +14,28 @@ const books = [
     price: "4",
     image: ThePresent,
   },
+  // {
+  //   id: 2,
+  //   title: "Who Moved My Cheese?",
+  //   slug: "Who-Moved-My-Cheese?",
+  //   released: " February , 2002",
+  //   genre: "Fiction, Self-help",
+  //   author: "Spencer Johnson",
+  //   price: "4",
+  //   image: WhoMovedMyCheese,
+  // },
   {
-    key: 2,
+    id: 2,
     title: "Who Moved My Cheese?",
     slug: "Who-Moved-My-Cheese?",
-    released: " February , 2002",
+    released: "February , 2002",
     genre: "Fiction, Self-help",
     author: "Spencer Johnson",
     price: "4",
-    image: WhoMMyCheese,
+    image: WhoMovedMyCheese,
   },
   {
-    key: 3,
+    id: 3,
     title: "The Forty Rules of Love",
     slug: "The-Forty-Rules-of-Love",
     released: " March , 2009",
@@ -35,7 +45,7 @@ const books = [
     image: FortyRulesofLove,
   },
   {
-    key: 4,
+    id: 4,
     title: "Blindness",
     slug: "Blindness",
     released: " September 23, 2003",

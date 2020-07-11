@@ -1,19 +1,26 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import { Route, Switch } from "react-router";
+import { GlobalStyle } from "./styles";
 
 //Components
 import BookList from "./Components/BookList";
 import BookDetail from "./Components/BookDetail";
 import books from "./books";
+import Home from "./Components/Home";
+import NavBar from "./Components/NavBar";
+import { ThemeProvider } from "styled-components";
+
+const theme = {
+  bordersColor: "#e5e5e5",
+  grey: "#6d6875",
+};
 
 function App() {
-  //const book = books[0];
-  const [book, setBook] = useState(books[0]);
-
   return (
-    <>
-      <Link to="/books">BOOKS</Link>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+
+      <NavBar />
 
       <Switch>
         <Route path="/books/:bookSlug">
@@ -22,8 +29,11 @@ function App() {
         <Route path="/books">
           <BookList books={books} />
         </Route>
+        <Route exact path="/">
+          <Home />
+        </Route>
       </Switch>
-    </>
+    </ThemeProvider>
   );
 }
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 //Styles
@@ -11,7 +11,8 @@ const BookItem = ({ book }) => {
         <Link to={`/books/${book.slug}`}>
           <img src={book.image} alt={book.title} />
         </Link>
-        <p className="titleStyle">{book.title}</p>
+        <p>{book.title}</p>
+        <p>Price: {book.price}</p>
       </ItemWrapper>
     </>
   );

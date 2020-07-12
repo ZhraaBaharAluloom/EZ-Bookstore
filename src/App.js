@@ -5,6 +5,7 @@ import { GlobalStyle } from "./styles";
 //Components
 import BookList from "./Components/BookList";
 import BookDetail from "./Components/BookDetail";
+import RecommandedDetail from "./Components/RecommandedDetail";
 import books from "./books";
 import Home from "./Components/Home";
 import NavBar from "./Components/NavBar";
@@ -23,6 +24,9 @@ function App() {
       <NavBar />
 
       <Switch>
+        <Route path="/rBooks/:rBookSlug">
+          <RecommandedDetail />
+        </Route>
         <Route path="/books/:bookSlug">
           <BookDetail />
         </Route>

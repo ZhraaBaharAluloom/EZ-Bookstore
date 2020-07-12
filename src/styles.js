@@ -4,9 +4,9 @@ import { NavLink } from "react-router-dom";
 
 export const DetailWrapper = styled.div`
   img {
-    width: 200px;
-    height: 300px;
-    display: block;
+    width: 300px;
+    height: 350px;
+    display: flex;
     margin: 50px auto auto auto;
     padding: 15px;
   }
@@ -15,8 +15,8 @@ export const DetailWrapper = styled.div`
     font-size: 25px;
   }
   h1 {
-    margin-top: 200px;
     text-align: center;
+    margin-top: 100px;
   }
 `;
 
@@ -26,12 +26,12 @@ export const ItemWrapper = styled.div`
   height: 400px;
   padding: 2px;
   margin-top: 10px;
+
   img {
     width: 200px;
     height: 300px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    margin: auto;
     border: 0.1px solid ${(props) => props.theme.bordersColor};
   }
 
@@ -54,18 +54,16 @@ export const GlobalStyle = createGlobalStyle`
 
 body {
   background: linear-gradient(rgba(234, 224, 213, 0.4), rgba(94, 80, 63, 0.4));
-height: 100vh;
-margin: 0px;
-background-repeat: no-repeat;
-background-size: cover;
-
-
+height: auto;
+background-attachment: fixed;
+margin: 10px;
 }`;
 
 export const ListWrapper = styled.div`
   align-items: center;
   justify-content: center;
   display: flex;
+  flex-wrap: wrap;
   margin-top: 100px;
 `;
 
@@ -99,5 +97,26 @@ export const NavItem = styled(NavLink)`
 
   &.active {
     color: black;
+  }
+`;
+
+export const RbookDetail = styled.div`
+  border: 1px solid ${(props) => props.theme.grey};
+  width: 400px;
+  margin: auto;
+  img {
+    width: 300px;
+    height: 350px;
+    display: flex;
+    margin: 50px auto auto auto;
+    padding: 15px;
+  }
+  p {
+    text-align: center;
+    font-size: 25px;
+  }
+  h1 {
+    text-align: center;
+    margin-top: 100px;
   }
 `;

@@ -4,6 +4,9 @@ import PeaksandValleys from "./media/PeaksandValleys.JPG";
 import ThePresent from "./media/ThePresent.JPG";
 import TheOneMinuteManager from "./media/TheOneMinuteManager.JPG";
 import WhoMovedMyCheese from "./media/WhoMovedMyCheese.jpg";
+import TheArchitect from "./media/TheArchitect.jpg";
+import ThePoems from "./media/ThePoems.jpg";
+import TheCave from "./media/TheCave.jpg";
 
 const rBooks = [
   {
@@ -67,9 +70,39 @@ const rBooks = [
     released: " September 23, 2003",
     genre:
       "Novel, Allegory, Apocalyptic and post-apocalyptic fiction, Psychological Fiction",
-    author: "Victor Hugo",
+    author: "José Saramago",
     price: "6",
     image: Blindness,
+  },
+  {
+    id: 11,
+    title: "The Architect's Apprentice",
+    slug: "The-Architect's-Apprentice",
+    released: " May 31, 2016",
+    genre: "Novel",
+    author: "Elif Shafak",
+    price: "4.5",
+    image: TheArchitect,
+  },
+  {
+    id: 12,
+    title: "The Poems Possible",
+    slug: "The-Poems-Possible",
+    released: "January 1, 2017",
+    genre: "Poetry",
+    author: "José Saramago",
+    price: "6",
+    image: ThePoems,
+  },
+  {
+    id: 13,
+    title: "The Cave",
+    slug: "The-Cave",
+    released: "October 15, 2000",
+    genre: "Horror/Thriller",
+    author: "José Saramago",
+    price: "7",
+    image: TheCave,
   },
 ];
 

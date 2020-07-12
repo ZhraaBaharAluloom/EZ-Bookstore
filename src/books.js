@@ -44,7 +44,7 @@ const books = [
     released: " September 23, 2003",
     genre:
       "Novel, Allegory, Apocalyptic and post-apocalyptic fiction, Psychological Fiction",
-    author: "Victor Hugo",
+    author: "José Saramago",
     price: "6",
     image: Blindness,
   },

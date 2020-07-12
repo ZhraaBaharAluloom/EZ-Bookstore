@@ -3,7 +3,7 @@ import RecommandedItem from "./RecommandedItem";
 import rBooks from "../rBooks";
 import { ListWrapper } from "../styles";
 
-const RecommandedList = ({ book, rBook }) => {
+const RecommandedList = ({ book }) => {
   const recommandedList = rBooks
     .filter(
       (rBook) => rBook.author === book.author && book.title !== rBook.title
